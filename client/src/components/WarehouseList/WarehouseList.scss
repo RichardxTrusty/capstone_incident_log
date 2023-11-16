@@ -1,0 +1,108 @@
+@use "../../styles/partials/typography";
+@use "../../styles/partials/global";
+@use "../../styles/partials/variables";
+@use "../../styles/partials/mixins";
+
+.incidents {
+  padding: 1rem 1rem;
+  width: 90%;
+  margin: auto;
+  background-color: variables.$white;
+  border-radius: 1.25rem;
+
+  &__header {
+    width: 100%;
+    @include mixins.tablet {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+    @include mixins.desktop {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+  }
+
+  &__title {
+    padding-left: 1rem;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 3rem 1rem;
+
+    @include mixins.tablet {
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+    @include mixins.desktop {
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+  }
+
+  &__input-container {
+    position: relative;
+    display: flex;
+    padding-bottom: 1rem;
+    width: 100%;
+    @include mixins.tablet {
+      width: 40%;
+      padding: 0 1rem;
+    }
+    @include mixins.desktop {
+      width: 35%;
+      padding: 0 1rem;
+    }
+  }
+
+  &__search-icon {
+    position: absolute;
+    right: 1rem;
+    top: 0.35rem;
+    @include mixins.tablet {
+      right: 1.5rem;
+    }
+    @include mixins.desktop {
+      right: 1.5rem;
+    }
+  }
+
+  &__add-button {
+    font-family: "Helvetica";
+    font-weight: lighter;
+    box-shadow: 0 4px 2px -2px rgba(43, 128, 0, 1);
+    background-color: white;
+    margin-bottom: 1rem;
+    width: 100%;
+    margin: 0;
+    @include mixins.tablet {
+      width: 100%;
+      padding: 0 1rem;
+    }
+    @include mixins.desktop {
+      width: 100%;
+      padding: 0 1rem;
+    }
+  }
+
+  &__input {
+    width: 100%;
+  }
+
+  &__sections {
+    display: none;
+    font-size: 102%;
+    @include mixins.tablet {
+      display: flex;
+      justify-content: space-evenly;
+    }
+    @include mixins.desktop {
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
+}

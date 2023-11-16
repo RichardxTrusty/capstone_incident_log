@@ -1,0 +1,144 @@
+@use "../../styles/partials/typography";
+@use "../../styles/partials/global";
+@use "../../styles/partials/variables";
+@use "../../styles/partials/mixins";
+
+.incidents {
+  padding: 1rem 1rem;
+  width: 90%;
+  margin: auto;
+  background-color: variables.$white;
+  border-radius: 0;
+
+  &__header {
+    @include mixins.tablet {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+    @include mixins.desktop {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+  }
+
+  &__title {
+    padding-left: 4rem;
+    width: 100%;
+  }
+
+  &__forms {
+    display: flex;
+    width: 25%;
+    padding: 1rem 1rem;
+
+    @include mixins.tablet {
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+    @include mixins.desktop {
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+  }
+
+  &__input-container {
+    position: relative;
+    display: flex;
+    padding-bottom: 1rem;
+    @include mixins.tablet {
+      width: 40%;
+      padding: 0 1rem;
+    }
+    @include mixins.desktop {
+      width: 35%;
+      padding: 0 1rem;
+    }
+  }
+
+  &__button {
+    background-color: variables.$instock-indigo;
+    margin-bottom: 1rem;
+    margin-top: 0;
+    @include mixins.tablet {
+      width: 40%;
+      padding: 0 1rem;
+    }
+    @include mixins.desktop {
+      width: 22%;
+      padding: 0 1rem;
+    }
+  }
+
+  &__sections {
+    display: none;
+    background-color: variables.$light-grey;
+    padding-bottom: 2rem;
+    padding-right: 4rem;
+    @include mixins.tablet {
+      display: flex;
+      justify-content: space-evenly;
+      padding-left: 3rem;
+    }
+    @include mixins.desktop {
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
+}
+
+.incident {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-top: 1px #bdc5d5 solid;
+  border-bottom: 1rem;
+}
+
+.incidentsection {
+  flex-direction: column;
+  @include mixins.desktop {
+    flex-direction: row;
+  }
+  @include mixins.tablet {
+    flex-direction: row;
+  }
+}
+
+.warehouseInformation {
+  display: flex;
+  width: 100%;
+
+  .warehouseBlock {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 1rem;
+    flex-wrap: wrap;
+    font-size: 13px;
+    @include mixins.desktop {
+    }
+    @include mixins.tablet {
+    }
+  }
+  .warehouseBorder {
+    border: none;
+    // padding: 1rem;
+
+    @include mixins.desktop {
+      border-left: solid 1px;
+      color: #bdc5bd;
+      // padding: 1rem;
+    }
+    @include mixins.tablet {
+      border-left: solid 1px;
+      color: #bdc5bd;
+      // padding: 1rem;
+    }
+  }
+}

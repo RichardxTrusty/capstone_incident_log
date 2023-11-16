@@ -1,0 +1,68 @@
+const dummyData = [
+  {
+    id: 1,
+    inventoryItem: "Television",
+    status: "In Stock",
+    category: "Electronics",
+    qty: 500,
+    incident: "Manhattan",
+  },
+  //   {
+  //     id: 2,
+  //     inventoryItem: "Laptop",
+  //     status: "Out of Stock",
+  //     category: "Electronics",
+  //     qty: 0,
+  //     incident: "Brooklyn",
+  //   },
+  //   {
+  //     id: 3,
+  //     inventoryItem: "Smartphone",
+  //     status: "In Stock",
+  //     category: "Electronics",
+  //     qty: 250,
+  //     incident: "Queens",
+  //   },
+  //   {
+  //     id: 4,
+  //     inventoryItem: "Headphones",
+  //     status: "In Stock",
+  //     category: "Electronics",
+  //     qty: 100,
+  //     incident: "Bronx",
+  //   },
+  //   {
+  //     id: 5,
+  //     inventoryItem: "Coffee Maker",
+  //     status: "Out of Stock",
+  //     category: "Kitchen Appliances",
+  //     qty: 0,
+  //     incident: "Staten Island",
+  //   },
+  //   {
+  //     id: 6,
+  //     inventoryItem: "Desk Chair",
+  //     status: "In Stock",
+  //     category: "Furniture",
+  //     qty: 50,
+  //     incident: "Manhattan",
+  //   },
+  //   {
+  //     id: 7,
+  //     inventoryItem: "Printer",
+  //     status: "In Stock",
+  //     category: "Electronics",
+  //     qty: 30,
+  //     incident: "Queens",
+  //   },
+  //   {
+  //     id: 8,
+  //     inventoryItem: "Air Purifier",
+  //     status: "Out of Stock",
+  //     category: "Home Appliances",
+  //     qty: 0,
+  //     incident: "Brooklyn",
+  //   },
+];
+
+export default dummyData;

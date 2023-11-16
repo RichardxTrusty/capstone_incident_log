@@ -1,0 +1,157 @@
+@use "../../styles/partials/typography";
+@use "../../styles/partials/variables";
+@use "../../styles/partials/mixins";
+
+.edit-inventory {
+  background-color: variables.$white;
+  width: 90%;
+  margin: auto;
+  border-radius: 1.25rem;
+
+  &__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    margin: auto;
+  }
+
+  &__border {
+    border-bottom: 1px solid variables.$cloud;
+
+    @include mixins.tablet {
+      border-left: 1px solid variables.$cloud;
+      margin: 0.5rem 0;
+    }
+
+    @include mixins.desktop {
+      border-left: 1px solid variables.$cloud;
+      margin: 0.5rem 0;
+    }
+  }
+
+  &__question-container {
+    @include mixins.tablet {
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+    }
+
+    @include mixins.desktop {
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+    }
+  }
+
+  &__sub-title {
+    padding: 1rem 0;
+  }
+
+  &__details {
+    padding: 0 1rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+
+    @include mixins.tablet {
+      width: 45%;
+    }
+
+    @include mixins.desktop {
+      width: 45%;
+    }
+  }
+
+  &__availability {
+    padding: 0 1rem;
+
+    @include mixins.tablet {
+      width: 45%;
+    }
+
+    @include mixins.desktop {
+      width: 45%;
+    }
+  }
+
+  &__label {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__stock {
+    display: flex;
+  }
+
+  &__instock {
+    display: flex;
+    align-items: center;
+    padding-right: 3rem;
+  }
+
+  &__outstock {
+    display: flex;
+    align-items: center;
+  }
+
+  &__radio {
+    width: 1rem;
+    margin-right: 1rem;
+  }
+
+  &__quantity {
+    &--hide {
+      display: none;
+    }
+  }
+
+  &__footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem 0;
+
+    @include mixins.tablet {
+      padding-top: 2rem;
+      width: 100%;
+      justify-content: flex-end;
+    }
+    @include mixins.desktop {
+      padding-top: 2rem;
+      width: 100%;
+      justify-content: flex-end;
+    }
+  }
+
+  &__cancel {
+    width: 40%;
+    background-color: #fff;
+    border: 1px solid variables.$cloud;
+    color: #000;
+    margin: 0;
+
+    @include mixins.tablet {
+      width: 15%;
+    }
+
+    @include mixins.desktop {
+      width: 15%;
+    }
+  }
+
+  &__save {
+    width: 40%;
+    background-color: variables.$instock-indigo;
+    margin: 0;
+
+    @include mixins.tablet {
+      width: 15%;
+      margin: 0 1rem;
+    }
+
+    @include mixins.desktop {
+      width: 15%;
+      margin: 0 1rem;
+    }
+  }
+}

@@ -1,0 +1,57 @@
+@use "../partials/variables";
+
+// @font-face {
+//   font-family: "Titillium";
+//   src: url("../../assets/fonts/TitilliumWeb-Regular.ttf") format("woff2");
+//   font-weight: 400;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: "Titillium Bold";
+//   src: url("../../assets/fonts/TitilliumWeb-SemiBold.ttf") format("woff2");
+//   font-weight: 600;
+//   font-style: normal;
+// }
+
+@font-face {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+// headings
+
+// page header
+h1 {
+  font-family: "Helvetica";
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+  font-weight: lighter;
+  color: #2b8000;
+}
+
+// subheader
+h2 {
+  font-family: "Helvetica";
+  font-size: 1.15rem;
+  line-height: 1.75rem;
+  font-weight: lighter;
+  color: #613889;
+}
+
+// labels, links & buttons
+h3 {
+  font-family: "Helvetica";
+  font-size: 1.17rem;
+  line-height: 1.25rem;
+  color: #613889;
+  font-weight: lighter;
+}
+
+// table header
+h4 {
+  font-family: "Helvetica";
+  font-size: 1.1rem;
+  font-weight: lighter;
+  line-height: 1rem;
+  color: variables.$slate;
+}
