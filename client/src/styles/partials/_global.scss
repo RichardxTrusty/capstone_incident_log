@@ -16,10 +16,10 @@ select {
   width: 100%;
   margin-bottom: 4px;
   padding: 0 1rem;
-  font-family: "Titillium";
+  font-family: "Helvetica";
 
   &::placeholder {
-    font-family: "Titillium";
+    font-family: "Helvetica";
   }
 }
 
@@ -31,7 +31,7 @@ button {
 }
 
 label {
-  font-family: "Titillium Bold";
+  font-family: "Helvetica";
   font-size: 0.813rem;
   line-height: 1.25rem;
 }

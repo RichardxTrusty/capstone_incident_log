@@ -1,0 +1,288 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/typography";
+/* EditIncident.scss */
+
+// Container Styles
+.edit-incident-container {
+  display: flex;
+  justify-content: center;
+  background-color: #f7f8f9;
+  width: 100%;
+}
+
+// Card Styles
+.edit-incident-card {
+  padding: 0.8125rem;
+  // border: 1px solid #ffffff;
+  // border-radius: 10px 100px;
+  // box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.5);
+  // background-color: #ffffff;
+  margin-top: 0rem;
+}
+
+// Edit Incident Styles
+.edit-incident {
+  padding: 20px;
+
+  &__back-icon {
+    // Styles for the back icon
+    width: 24px;
+    height: 24px;
+  }
+
+  &__title {
+    // Styles for the title
+    margin-left: 10px;
+    font-size: 28px;
+  }
+
+  // Header Styles
+  &__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  &__divider {
+    // Styles for the dividers
+    border: 1px solid #bdc5d5;
+    margin: 2px 0;
+    width: 100%;
+  }
+
+  .edit-incident__form-field {
+    // Styles for form fields within the section
+    margin-bottom: 15px;
+
+    label {
+      // Styles for labels
+      display: block;
+      margin-bottom: 1px;
+    }
+
+    input {
+      // Styles for input fields
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #bdc5d5;
+      border-radius: 50px;
+      padding-bottom: 5px;
+    }
+  }
+
+  &__section {
+    margin-bottom: 20px;
+
+    &-title {
+      // Styles for the section titles
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+  }
+  // &__save-button {
+  //   // Styles for the "Save" button
+  //   background-color: #2e66e5;
+  //   color: #ffffff;
+  //   border: none;
+  // }
+
+  &__cancel-button {
+    // Styles for the "Cancel" button
+    background-color: #ffffff;
+    color: #5c667e;
+    border: 1px solid #bdc5d5;
+  }
+  // &__buttons {
+  //   display: flex;
+
+  //   button {
+  //     // Styles for buttons
+  //     flex: 1;
+  //     padding: 10px;
+  //     margin-right: 10px;
+  //     cursor: pointer;
+  //     border-radius: 50px;
+  //     margin-top: 40px;
+  //   }
+  // }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  // Tablet Styles
+
+  .edit-incident__divider-second {
+    // Vertical divider styles for the tablet section
+    width: 1px;
+    height: 470px;
+    background-color: #bdc5d5;
+    margin-left: 20px;
+  }
+
+  .edit-incident-card {
+    width: 700px;
+    margin-bottom: 240px;
+  }
+  .edit-incident__button {
+    // Adjust button styles for tablet here
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 150px;
+    margin-left: auto;
+
+    button {
+      margin-top: 20px;
+      // Adjust button styles for tablet here
+      font-family: "Helvetica";
+      font-weight: lighter;
+      background-color: white;
+      box-shadow: 0 4px 2px -2px rgb(75, 40, 109);
+      color: purple;
+      text-align: center;
+      padding: 0.5rem;
+      margin: 0 1rem;
+      border-radius: 0.875rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 25%;
+      margin-left: auto;
+      @include tablet {
+        min-width: 6.688rem;
+        width: 10%;
+        margin: 0.688rem;
+      }
+    }
+  }
+
+  .edit-incident__items {
+    display: flex;
+
+    .edit-incident__section {
+      flex: 1;
+      padding: 20px;
+      position: relative;
+
+      &-title {
+        font-size: 24px;
+        margin-bottom: 35px;
+      }
+    }
+    .edit-incident__form-field {
+      // Styles for form fields within the section
+      margin-bottom: 15px;
+
+      label {
+        // Styles for labels
+        display: block;
+        margin-bottom: 1px;
+      }
+
+      input {
+        // Adjust the width of input fields for tablet here
+        width: 75%;
+        padding: 1.6rem;
+        border: 1px solid white;
+        border-radius: 10px 100px;
+        border-bottom-color: #4b286d;
+        border-left: #4b286d;
+      }
+    }
+  }
+}
+@media (min-width: 1024px) {
+  // Desktop Styles
+  // @media (min-width: 767px) {
+
+  .edit-incident__title {
+    // font-size: 34px;
+  }
+
+  .edit-incident__divider-second {
+    // Vertical divider styles for the tablet section
+    width: 1px;
+    height: 490px;
+    background-color: #bdc5d5;
+    margin-left: 20px;
+  }
+
+  .edit-incident-card {
+    width: 80vw;
+    margin-bottom: 0%;
+  }
+  .edit-incident__button--save {
+    // Adjust button styles for tablet here
+    font-family: "Helvetica";
+    font-weight: lighter;
+    box-shadow: 0 4px 2px -2px rgb(75, 40, 109);
+    background-color: white;
+    color: $teluspurple;
+    text-align: center;
+    padding: 0.5rem;
+    margin: 0 1rem;
+    border-radius: 0.875rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    margin-left: auto;
+
+    @include tablet {
+      min-width: 6.688rem;
+      width: 25%;
+      margin: 0.688rem;
+    }
+  }
+
+  .edit-incident__button--save:hover {
+    background-color: $telusgreen;
+    color: $white;
+    @include tablet;
+  }
+
+  .edit-incident__items {
+    display: flex;
+
+    .edit-incident__section {
+      flex: 1;
+      padding: 2rem;
+      position: relative;
+
+      &-title {
+        font-size: 28px;
+        margin-bottom: 45px;
+      }
+    }
+    .edit-incident__form-field {
+      // Styles for form fields within the section
+      margin-bottom: 15px;
+
+      label {
+        // Styles for labels
+        font-family: Helvetica;
+        display: block;
+        margin-bottom: 1px;
+        font-size: 1rem;
+        color: #2b8000;
+      }
+      .edit-incident__form-field_incident_log {
+        width: 100%;
+      }
+      input {
+        // Adjust the width of input fields for tablet here
+        font-family: Helvetica;
+        width: 75%;
+        padding: 1.6rem;
+        border: 1px solid white;
+        border-radius: 10px 100px;
+        border-bottom-color: #4b286d;
+        border-left: #4b286d;
+        color: grey;
+      }
+    }
+  }
+  // }
+}

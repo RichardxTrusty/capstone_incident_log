@@ -22,11 +22,9 @@ const singleIncident = (req, res) => {
 
 const deleteIncident = (req, res) => {
   const incidentId = req.params.id;
-  // Delete associated inventory items
-  knex("inventories")
-    .where({ incident_id: incidentId })
-    .del()
-    .then(() => knex("incidents").where({ id: incidentId }).del()) // Delete the incident
+  knex("incidents")
+    .where({ id: incidentId })
+    .del() // Delete the incident
     .then((result) => {
       if (result === 0) {
         res.status(404).json(`Incident not found: ${err}`);

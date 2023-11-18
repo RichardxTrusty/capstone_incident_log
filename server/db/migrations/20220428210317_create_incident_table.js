@@ -15,6 +15,7 @@ exports.up = function (knex) {
     table.string("reporter_email").notNullable();
     table.string("impact_description").notNullable();
     table.string("affected_services").notNullable();
+    table.string("incidents_log").notNullable();
     table.timestamp("created_at").defaultTo(knex.fn.now());
     table
       .timestamp("updated_at")

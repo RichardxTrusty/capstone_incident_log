@@ -7,14 +7,11 @@ const Header = () => {
     <header className="navigation">
       <div className="navigation-header">
         <Link to="/">
-          <img src={Logo} alt="instock logo"></img>
+          <img className="brand_logo" src={Logo} alt="instock logo"></img>
         </Link>
         <div className="navigation-header__container">
-          <Link to="/WarehouseList" className="navigation-header__link">
-            Reported Major Incidents
-          </Link>
-          <Link to="/InventoryList" className="navigation-header__link">
-            Inventory
+          <Link to="/IncidentList" className="navigation-header__link">
+            Major Incidents
           </Link>
         </div>
       </div>

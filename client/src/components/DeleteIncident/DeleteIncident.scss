@@ -1,0 +1,60 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/typography";
+
+.modalText {
+  padding-top: 0.5rem;
+  align-items: center;
+}
+.modalcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0 !important;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modal {
+  width: 672px;
+  height: 262px;
+  background-color: white;
+  padding-top: 4rem;
+  padding-left: 6rem;
+  padding-right: 4rem;
+  border: 1px solid black;
+  box-shadow: 10px 10px 5px #888888;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: right;
+  padding: 10px 10px;
+  gap: 0.5rem;
+
+  .deleteButton {
+    width: 72px;
+    height: 38px;
+    top: 369px;
+    left: 753px;
+    border-radius: 20px;
+    border: 1px;
+    padding: 8px 8px 8px 8px;
+    background-color: #4b286d;
+    margin: 0;
+  }
+  .cancelButton {
+    width: 72px;
+    height: 38px;
+    top: 369px;
+    left: 753px;
+    border-radius: 20px;
+    padding: 8px 8px 8px 8px;
+    background: $graphite;
+    border: 1px solid #bdc5d5;
+    color: black;
+    margin: 0;
+  }
+}

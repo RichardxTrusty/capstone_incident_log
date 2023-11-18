@@ -12,16 +12,14 @@
   }
 }
 
-
 @mixin regular {
-  font-family: "Titillium";
+  font-family: "Helvetica";
   font-weight: 400;
   font-style: normal;
 }
 
 @mixin bold {
-  font-family: "Titillium";
+  font-family: "Helvetica";
   font-weight: 600;
   font-style: normal;
 }
-

@@ -7,7 +7,7 @@ function validateIncidentData(data) {
     typeof data.impact_condition !== "string" ||
     data.impact_condition.trim() === ""
   ) {
-    return false; // Warehouse name is missing or not a non-empty string
+    return false; // Incident name is missing or not a non-empty string
   }
 
   if (
