@@ -33,6 +33,7 @@ Clone the repository: git clone https://github.com/RichardxTrusty/capstone_incid
 
 ![Incident List](<Image 2023-11-19 at 12.47 PM.jpg>)
 ![Incident Log](<Image 2023-11-19 at 12.48 PM.jpg>)
+![Edit Log Item](2D236C83-7FFC-4034-A1FC-667E4D63FFDD.jpeg)
 
 ## Lessons Learned & Next Setps
 
