@@ -35,8 +35,8 @@ export default function DeleteIncident({
         <PopupBody className="modal">
           <h1>Delete {incidentname} incident?</h1>
           <p className="modalText">
-            Please confirm that you'd like to delete the {incidentname} from the
-            list of incidents. You won't be able to undo the section.
+            Please confirm that you would like to delete the this incident from the
+            logged incidents. You will not be able to undo.
           </p>
           <div className="buttonContainer">
             <button
