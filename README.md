@@ -29,6 +29,11 @@ Clone the repository: git clone https://github.com/RichardxTrusty/capstone_incid
 6. Install frontend dependencies: `npm install`
 7. Start the React development server: npm start
 
+## Screen Shot Images
+
+![Incident List](<Image 2023-11-19 at 12.47 PM.jpg>)
+![Incident Log](<Image 2023-11-19 at 12.48 PM.jpg>)
+
 ## Lessons Learned & Next Setps
 
 - A significant lesson I gleaned from this project pertained to scope. While I aimed to include features like using AI for summarizing incident logs in the first iteration of the application, time constraints prevented me from fully developing these ideas.
